@@ -4,4 +4,4 @@ This project heavily utilizes JavaScript by using DOM manipulation to dynamicall
 
 First project where webpack is utilized. 
 
-Click here[https://laumt9.github.io/restaurant-page/] to check out my project! 
+Click [here](https://laumt9.github.io/restaurant-page/) to check out my project! 
