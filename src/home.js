@@ -17,7 +17,6 @@ function homePage() {
    main.className = '';
    main.classList.add('home-page');
    main.appendChild(createHome());
-   console.log('Home Page');
 }
 
 export default homePage;

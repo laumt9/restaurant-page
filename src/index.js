@@ -1,5 +1,3 @@
-console.log('You got this!');
-
 import homePage from "./home";
 import menuPage from "./menu";
 import aboutUsPage from "./aboutus";
@@ -11,9 +9,12 @@ function createHeader() {
    const header = document.createElement('header');
    header.classList.add('header');
 
-   const restaurantName = document.createElement('h1');
+   const restaurantName = document.createElement('button');
    restaurantName.classList.add('restaurantName');
    restaurantName.textContent = 'DAK';
+   restaurantName.addEventListener('click', () => {
+      homePage();
+   });
 
    const buttonsDiv = document.createElement('div');
    buttonsDiv.classList.add('btnDiv');
