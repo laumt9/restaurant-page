@@ -7,7 +7,7 @@
 }
 
 body {
-   background: url('../img/background.jpg') no-repeat center center fixed;
+   background: url(https://raw.githubusercontent.com/laumt9/restaurant-page/gh-pages/img/background.jpg) no-repeat center center fixed;
    background-size: cover;
    background-position: center center;
 }
