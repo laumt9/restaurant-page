@@ -35,8 +35,11 @@ body {
 }
 
 .restaurantName {
-   font-size: 20px;
+   font-size: 25px;
    color: white;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
 }
 
 .btnDiv {
@@ -57,14 +60,14 @@ body {
 
 .button:hover {
    text-decoration: underline;
+   text-underline-offset: 0.25rem;
 }
 
 /* Main */
 
 #main {
-   width: 60%;
-   max-width: max-content;
-   margin: 6rem;
+   width: 100%;
+   margin: 6rem 0 6rem 0;
 }
 
 /* Home Page */
@@ -87,16 +90,16 @@ body {
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
-   width: 100%;
+   width: 70%;
+   margin: auto;
    border: 2px solid black;
 }
 
-.menu-title {
+.menu-header {
    margin: 2rem 0 0 0;
    padding: 0.5rem;
    width: 90%;
    border: 5px solid black;
-   color: black
 }
 
 .menu-item-div {
@@ -119,6 +122,11 @@ body {
    width: 40%;
 }
 
+.menu-divider {
+   border: 1px solid black;
+   width: 80%;
+}
+
 /* About Us Page */
 
 .about-us {
@@ -126,21 +134,57 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   width: 50%;
+   margin: auto;
+   gap: 3rem;
+}
+
+.about-us-divs {
+   background-color: rgba(250, 235, 215, 0.9);
+   border: 2px solid black;
    width: 100%;
-   gap: 5rem;
+   padding: 1rem;
 }
 
-.story-div {
-   background-color: rgba(250, 235, 215, 0.9);
-   width: 100%;
+.about-us-headers {
+   text-decoration: underline;
+   text-underline-offset: 0.25rem;
+   width: 90%;
+   padding: 0.5rem;
+   margin: auto;
 }
 
-.visit-div {
-   background-color: rgba(250, 235, 215, 0.9);
+.mission-text {
+   padding: 1rem;
 }
 
-.contact-div {
-   background-color: rgba(250, 235, 215, 0.9);
+.visit-location, .visit-address, .visit-hours {
+   padding: 0.5rem;
+}
+
+.visit-hours-header {
+   margin-top: 1rem;
+}
+
+.contact-form {
+   display: grid;
+   justify-content: center; 
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 6fr;
+   width: 70%;
+   gap: .5rem;
+   padding: 1rem;
+   margin: auto;
+}
+
+.contact-form-text {
+   grid-area: 2 / 1 / 3 / 3;
+}
+
+.contact-form-submit {
+   width: 4rem;
+   height: 1.5rem;
+   cursor: pointer;
 }
 
 /* Footer */
