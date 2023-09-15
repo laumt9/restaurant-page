@@ -104,9 +104,9 @@ function createFooter() {
    github.classList.add('github');
    github.href = 'https://github.com/laumt9'
 
-   const githubIcon = document.createElement('img');
-   githubIcon.classList.add('githubIcon');
-   githubIcon.src = '../dist/img/github.svg';
+   const githubIcon = document.createElement('i');
+   githubIcon.classList.add('fa-brands', 'fa-github');
+   githubIcon.style.color = 'white';
 
    github.appendChild(githubIcon);
 
